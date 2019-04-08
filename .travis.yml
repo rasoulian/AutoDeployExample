@@ -19,7 +19,8 @@ deploy:
   provider: releases
   file_glob: true
   skip_cleanup: true
-  api_key: $GITHUB_TOKEN
+  api_key:
+    secure: E1b0I+lVPi3qhL3Kwwd3ZpffggCbA3AZCAL82XUvPe4l2kEfzYnYFEEZXkuQPzJhTOYrcb4i89Tcbo9eBXkIgw/OFO6JIggq97cFck8IBkRU40X8nuTYU7UeWeM5htnUwlM6874VWeEELF2b1TebmGnxletbgy9kpX+7taGOUd8a82QXql6jYJIqqWqqnlShlWYLjCOXUO0N/oOmFAa7I0x77l12tgVPb3TrGBaTmwdd4BR/+KJ0JAKCMj1JGSjlwrkAia46OatlJyyg+jQhS3RMyvcij/ATc9GwmwxKXwHVhNNBJVRDNXVIToiive3uTLy2S5poR1cbsME4RBduEqcPQY29jL9jLIVyDFITauN4uZXH/yf/NnWVdiUl8MkxDsRWjRXHLHsEKl2SxUS1I+h6qXZMHiHdxH+ll9zAv5TZl1fakXWpREHLTaY9PE01w41NLDiOo086/e0vBKFnrobpcN+rOjoKoaXVk6ANSbDNJdRnDjldrb8l29i6gywmgzxwgL9jmLDBy1eOv5lj32fhV5NM8bn+vSymiFwIRLq3VcjpVg1X2z2bEJv47djsNceZNqJy1v746qaFn4sAuwDTu6OmwSS6ufRdC1y0egge/L6thTLcgcU40F/ke4lfwTpEeeZfSRIQ1CBNauMhgYWvJP6kqJUVyes+Gk/Bm1Q=
   file: autodeployapp/build/outputs/apk/autodeployapp*release*.apk
   on:
     repo: rasoulian/AutoDeployExample
